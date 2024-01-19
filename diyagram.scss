@@ -1,0 +1,33 @@
++-----------------+       +------------------------+       +-----------------------+
+|   Asansor       |-------|   AsansorKontrolPaneli  |-------|    AsansorKapi        |
++-----------------+       +------------------------+       +-----------------------+
+| - kapasite      |       | - hedefDugmeleri       |       | - acilDurumDugmesi   |
+| - kat            |       | - kapıAcmaDugmesi      |       | - kapıAcik           |
+| - hareketDurumu |       | - kapıKapatmaDugmesi   |       | - kapıZili           |
+| - içindekiler   |       | - varisZili            |       |                       |
+| + hareketEt()   |       | - kontrolPaneliGoster()|       +-----------------------+
+| + dur()          |       +------------------------+
+| + yolcuAl()      |
+| + yolcuBirak()   |
++-----------------+
+          |
+          |
+          v
++-----------------+
+|     Kat         |
++-----------------+
+| - katNumarasi   |
+| + varisZiliCal()|
+| + isikYak()     |
+| + isikSondur()  |
++-----------------+
+          |
+          |
+          v
++-----------------+
+|  AsansorSimulator|
++-----------------+
+| - saat          |
+| - gunlukKayit   |
+| + simulate()    |
++-----------------+
